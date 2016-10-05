@@ -71,7 +71,7 @@ var $activeSlide = $(".active"),
 			index = slideIn.index(),
 			size = $('.top .homeSlide').length;
 
-		// go to next slide Timeline 
+		// go to previous slide Timeline 
 		if(slideIn.length !== 0){
 		tl
 			.set(slideIn, {y: '-100%', autoAlpha: 1, className: "+=active"})
@@ -107,7 +107,7 @@ var $activeSlide = $(".active"),
 		var xPosition = (event.clientX/$(window).width())-0.5;
 		var yPosition = (event.clientY/$(window).height())-0.5; 
 
-		 // moving hero
+		 // hero rotating effect
 		 TweenLite.to($hero, 0.6, {rotationY:15*xPosition, rotationX:15*yPosition, ease:Power1.easeOut, transformPerspective: 600, transformOrigin: "center"});
 
 		$(".bottom strong").text(event.pageX+', '+event.pageY);
