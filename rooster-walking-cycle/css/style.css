@@ -1,0 +1,53 @@
+#sky {
+  background: #a7e2f2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#ground {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #3b6b34;
+}
+
+.cloud {
+  width: 100%;
+  position: absolute;
+}
+
+.cloud.one {
+  left: -99%;
+}
+
+.cloud.three {
+  top: 5%;
+  opacity: 0.5;
+  left: 49.9%;
+}
+
+.cloud.four {
+  top: 5%;
+  opacity: 0.5;
+  left: -50%;
+}
+
+#rooster-container {
+  width: 320px;
+  position: absolute;
+  right: 100px;
+  bottom: 340px;
+ }
+
+#rooster-container img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
